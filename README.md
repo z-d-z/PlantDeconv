@@ -10,6 +10,8 @@ PlantDeconv addresses this problem by integrating single-cell reference data, sp
 
 ## Model Framework
 
+![PlantDeconv framework](framework.png)
+
 PlantDeconv takes two main inputs:
 
 - A single-cell RNA-seq reference dataset with cell-type annotations
@@ -31,6 +33,8 @@ The core model estimates a cell-type composition matrix for each spatial spot an
 These components help reduce unrealistic spatial diffusion and improve anatomical consistency in plant tissues.
 
 ## Benchmark and Testing Strategy
+
+![Pseudo-spot benchmark](benchmark.png)
 
 The model can be evaluated using pseudo-spot benchmarks generated from high-resolution spatial annotations. In this testing strategy, annotated spatial bins are merged into larger pseudo spots, such as 32 μm or 64 μm pseudo spots. Since the original cell-type annotations are known, the true cell-type composition of each pseudo spot can be calculated and used as ground truth.
 

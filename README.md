@@ -141,3 +141,6 @@ Main output files include:
 PlantDeconv expects the single-cell and spatial datasets to share a sufficient number of genes. The value of `cluster_label` must match the cell-type annotation column in `adata_sc.obs`, and the value of `marker_key` must match the key used by `sc.tl.rank_genes_groups`.
 
 Region-based regularization is optional and is most useful when reliable spatial region annotations are available.
+## Citation
+
+If you use PlantDeconv, please cite this repository and the associated manuscript. Citation information will be updated after publication.

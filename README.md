@@ -40,34 +40,6 @@ The model can be evaluated using pseudo-spot benchmarks generated from high-reso
 
 PlantDeconv predicts the cell-type proportions for each pseudo spot, and the predicted composition is compared with the known ground-truth composition. This enables quantitative evaluation of deconvolution performance under different spatial resolutions and spot sizes.
 
-## Code Workflow
-
-The main pipeline is implemented in `main.py`. The workflow contains the following steps:
-
-### 1. Configure input files
-
-The user should modify the paths in `main.py` to match their own datasets:
-
-```python
-SC_H5AD = Path("path/to/single_cell_reference.h5ad")
-ST_H5AD = Path("path/to/spatial_data.h5ad")
-HE_IMAGE_PATH = Path("path/to/tissue_hires_image.png")
-OUTPUT_DIR = Path("path/to/output_directory")
-```
-
-## Installation
-
-We recommend creating a clean conda environment before running PlantDeconv.
-
-```bash
-git clone https://github.com/z-d-z/PlantDeconv.git
-cd PlantDeconv
-
-conda create -n plantdeconv python=3.10 -y
-conda activate plantdeconv
-
-pip install -r requirements.txt
-```
 ## Installation
 
 We recommend creating a clean conda environment before running PlantDeconv.

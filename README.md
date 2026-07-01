@@ -53,6 +53,7 @@ SC_H5AD = Path("path/to/single_cell_reference.h5ad")
 ST_H5AD = Path("path/to/spatial_data.h5ad")
 HE_IMAGE_PATH = Path("path/to/tissue_hires_image.png")
 OUTPUT_DIR = Path("path/to/output_directory")
+```
 
 ## Installation
 
@@ -66,3 +67,4 @@ conda create -n plantdeconv python=3.10 -y
 conda activate plantdeconv
 
 pip install -r requirements.txt
+```
